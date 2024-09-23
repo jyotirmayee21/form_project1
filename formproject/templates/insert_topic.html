@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>TOPIC</title>
+</head>
+<body>
+    <center>
+        <h1>Insert_Topic</h1>
+        <form method="POST">
+            {% csrf_token %}
+            <label for="topic" class="mt-2">Topic Name</label>
+            <input type="text" name="topic" id="topic"><br>
+
+            <input type="Submit" class="mt-2">
+            
+        </form>
+    </center>
+</body>
+</html>

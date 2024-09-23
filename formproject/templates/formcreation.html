@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>FORM</title>
+</head>
+<body>
+    <center>
+        <h1>Form Creation</h1>
+        <form method="POST" action="">
+            {% csrf_token %}
+            <label for="un" class="mt-2">UserName</label>
+            <input type="text" name="un" id="un"><br>
+            <label for="pw" class="mt-2">PassWord</label>
+            <input type="password" name="pw" id="pw"><br>
+            <input type="Submit" class="mt-2">
+        </form>
+    </center>
+</body>
+</html>
